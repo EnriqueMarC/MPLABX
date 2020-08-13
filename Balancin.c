@@ -81,9 +81,7 @@ void __interrupt() my_isr(void)
           //para evitar una acción en falso.
           LATBbits.LB0 = 1;
           flag=0;
-      }
-           
-         
+      }                   
         TMR0IF = 0;
     }
   
